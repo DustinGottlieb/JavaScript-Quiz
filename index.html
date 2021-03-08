@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <h1>Coding Quiz Challenge</h1>
+    <div>Answer the multiple choice questions, you have 60 seconds. Good Luck!
+        <br><br>
+        <button id="startButton" onclick="getElementById('TestsDiv').style.display = 'block'; this.style.display = 'none'">Start</button>
+        <div id="TestsDiv" style="display:none">
+            <div id="timer"></div>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+            </div>
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button id="submit">Submit Quiz</button>
+            <div id="results"></div>
+            <script src="./assets/js/javascript.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
