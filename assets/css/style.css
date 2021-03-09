@@ -62,11 +62,13 @@ button:hover {
     transition: opacity 0.5s;
 }
 
-a:link {
+a:link,
+link {
     text-decoration: none;
 }
 
-a:visited {
+a:visited,
+link {
     text-decoration: none;
     color: white;
 }
@@ -81,37 +83,3 @@ a:visited {
     height: 200px;
     margin-top: 40px;
 }
-
-
-/*button styling attempt after here*/
-
-
-/*.question input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.question {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: grey;
-    border-radius: 50%;
-}
-
-.question:hover input~.radio {
-    background-color: red;
-}
-
-.question input:checked~.radio {
-    background-color: orange;
-}
-
-.question:after {
-    content: "";
-    position: absolute;
-    display: none;
-}*/

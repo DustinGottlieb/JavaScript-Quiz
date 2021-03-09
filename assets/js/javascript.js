@@ -48,7 +48,7 @@ function countDown() {
             }
         );
 
-        quizContainer.innerHTML = output.join('');
+        quizContainer.innerHTML = output.join("");
     }
 
     function showResults() {
@@ -72,14 +72,17 @@ function countDown() {
 
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}
         <form>
-         Enter Your Initials <input type="text" id="Initials" value="Initials"><input type="submit" value="Save Score"></form><br><button><a href="./scores.html">View High Scores</a></button>`;
+         Enter Your Initials <input type="text" id="Initials" value="Initials"><input type="submit" value="Save Score"></form>
+         <br><button id="link"><a href="./scores.html">View High Scores</a></button>`;
 
         document.querySelector('form').onsubmit = function(e) {
             e.preventDefault();
-            var name = document.querySelector("#Initials");
+            var Initials = document.querySelector("#Initials");
             var score = numCorrect;
             localStorage["Name"] = document.querySelector("#Initials").value;
             localStorage["Score"] = numCorrect;
+            console.log(Initials);
+            console.log(score);
         }
 
     }
